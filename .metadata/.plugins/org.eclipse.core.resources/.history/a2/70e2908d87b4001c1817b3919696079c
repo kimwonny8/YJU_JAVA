@@ -1,0 +1,62 @@
+package Main;
+
+import java.util.*;
+
+class DiceGame{
+	
+	int diceFace;
+	int userGuess;
+	
+	int score=0;
+	int life=5;
+	
+	private void ScorePlus() {
+		score+=20;
+	}
+	
+	private void LifeMinus() {
+		life--;
+	}
+	
+	private void RollDice() {
+		diceFace = (int)(Math.random()*6)+1;
+	}
+	
+	private int getUserInput(String a) {
+		System.out.println(a);
+		Scanner sc=new Scanner(System.in);
+		return sc.nextInt();
+	}
+	
+	private void checkUserGuess() {
+		if(diceFace==userGuess) {
+			ScorePlus();
+			System.out.printf("오ㅋㅋ맞춤 20점업 현재 점수는 %d\n",score);
+		}
+		else {
+			System.out.printf("틀림! 답은 %d임!",diceFace);
+			if(life!=0) {
+				LifeMinus();
+				System.out.printf("현재 남은 생명은 %d, 점수는 %d \n",life,score);	
+			}
+			
+		}
+	}
+	
+	public void startPlaying() {
+		while(score!=100 && life!=0) {
+		userGuess = getUserInput("예상해");
+		RollDice();
+		checkUserGuess();
+		}
+	}
+}
+
+public class DiceGameTest {
+
+	public static void main(String[] args) {
+		DiceGame hi = new DiceGame();
+		hi.startPlaying();
+	}
+
+}

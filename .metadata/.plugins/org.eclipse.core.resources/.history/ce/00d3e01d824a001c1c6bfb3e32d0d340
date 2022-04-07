@@ -1,0 +1,12 @@
+package A;
+//String[] arr= a.split("\s"); 문자열 공백기준으로 자르기
+//Arrays.sort(arr, Collections.reverseOrder()); 내림차순정렬
+
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int y=sc.nextInt(), m=sc.nextInt(), d=sc.nextInt();
+	
+   }
+}

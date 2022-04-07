@@ -1,0 +1,41 @@
+package A;
+//String[] arr= a.split("\s"); 문자열 공백기준으로 자르기
+//Arrays.sort(arr, Collections.reverseOrder()); 내림차순정렬
+/*문자열배열 인트배열로 String[] arr=a.split(",");
+ * int[] result =new int[arr.length]; 
+	result[i]= Integer.parseInt(arr[i]); */
+
+import java.util.Scanner;
+import java.util.Stack;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Stack<Integer> stack =new Stack<Integer>();
+		int n=sc.nextInt();
+		
+		for(int i=0; i<n; i++) {
+			String a=sc.next(); 
+			if(a.equals("push")) {
+				int b=sc.nextInt();
+				stack.push(b); 
+			}
+			else if(a.equals("top")) {
+				if(stack.size()==0) System.out.println("-1");
+				else System.out.println(stack.peek());
+			}
+			else if(a.equals("size")) System.out.println(stack.size());
+			else if(a.equals("empty")) {
+				if(stack.size()==0) System.out.println("1");
+				else System.out.println("0");
+			}
+			else if(a.equals("pop")) {
+				if(stack.size()==0) System.out.println("-1");
+				else {
+					System.out.println(stack.peek());
+					stack.pop();
+
+				}
+			}
+		}
+	}
+}

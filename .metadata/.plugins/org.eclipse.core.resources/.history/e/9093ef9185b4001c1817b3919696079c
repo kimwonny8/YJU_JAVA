@@ -1,0 +1,45 @@
+package Main;
+
+import java.util.*;
+
+class DiceGame{
+	
+	int diceFace;
+	int userGuess;
+	//getUserInput RollDice checkUserGuess startPlaying
+	
+	private void RollDice() {
+		diceFace = (int)(Math.random()*6)+1;
+	}
+	
+	private int getUserInput(String a) {
+		System.out.println(a);
+		Scanner sc=new Scanner(System.in);
+		return sc.nextInt();
+	}
+	
+	private void checkUserGuess() {
+		if(diceFace==userGuess) System.out.println("오ㅋㅋ맞춤");
+		else {
+			System.out.printf("틀림! 답은 %d임! 다시해보세여",diceFace);
+			RollDice();
+			checkUserGuess();
+		}
+	}
+	
+	public void startPlaying() {
+		userGuess = getUserInput("예상해");
+		RollDice();
+		checkUserGuess();
+		
+	}
+}
+
+public class DiceGameTest {
+
+	public static void main(String[] args) {
+		DiceGame hi = new DiceGame();
+		hi.startPlaying();
+	}
+
+}
