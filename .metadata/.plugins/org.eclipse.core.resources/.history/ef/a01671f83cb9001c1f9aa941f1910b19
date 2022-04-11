@@ -1,28 +1,21 @@
 package Main;
 
 class Car {
-	// 필드 정의
+	//필드 정의
 	private String color;
 	private int speed;
 	private int gear;
 	
-	// 생성자
 	public Car(String c, int s, int g) {
 		color = c;
 		speed = s;
 		gear = g;
 	}
 	
-	// 생성자2 
 	public Car() {
 		color = "default color";
-		speed = 10;
-		gear = 10;
-	}
-	
-	// this 생성자
-	public Car(String c) {
-		this(c,0,1);
+		speed = 0;
+		gear = 1;
 	}
 	
 	public String getColor() { return color; }
@@ -46,15 +39,15 @@ class Car {
 public class CarTest {
 
 	public static void main(String[] args) {
-		// 생성자가 만들어지면 디폴트 생성자는 만들어지지 않기때문에 오류남
 		Car myCar = new Car(); // 객체 생성
-		Car yourCar = new Car("Hi",10,2);
+		Car yourCar = new Car();
 		Car test1 = new Car("pink",70,3);
 		Car test2 = new Car();
 		
 		test1.print();
 		test2.print();
 		
+		/*
 		myCar.setColor("red"); 
 		myCar.setSpeed(20);
 		myCar.setGear(1);
@@ -63,11 +56,22 @@ public class CarTest {
 		System.out.println("색상: "+myCar.getColor());
 		System.out.println("속도: "+myCar.getSpeed());
 		System.out.println("기어: "+myCar.getGear());
+
+		yourCar.setColor("red"); 
+		yourCar.setSpeed(20);
+		yourCar.setGear(1);
+		yourCar.print();
 		
 		System.out.println(yourCar.getColor()==myCar.getColor());
 		System.out.println(yourCar.getColor().equals(myCar.getColor()));
-		System.out.println(yourCar.equals(myCar));		
+		System.out.println(yourCar.equals(myCar));
+		*/
+		
 		// 클래스는 재정의된 equals로 비교해야됨
+		
+//		System.out.println(yourCar==myCar);
+//		yourCar=myCar;
+//		System.out.println(yourCar==myCar);
 		
 	}
 }

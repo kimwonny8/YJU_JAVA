@@ -14,16 +14,11 @@ class Car {
 	}
 	
 	// 생성자2 
-	public Car() {
+	/*public Car() {
 		color = "default color";
-		speed = 10;
-		gear = 10;
-	}
-	
-	// this 생성자
-	public Car(String c) {
-		this(c,0,1);
-	}
+		speed = 0;
+		gear = 0;
+	}*/
 	
 	public String getColor() { return color; }
 	public void setColor(String color) { this.color = color; }
@@ -48,7 +43,7 @@ public class CarTest {
 	public static void main(String[] args) {
 		// 생성자가 만들어지면 디폴트 생성자는 만들어지지 않기때문에 오류남
 		Car myCar = new Car(); // 객체 생성
-		Car yourCar = new Car("Hi",10,2);
+		Car yourCar = new Car("red",10,1);
 		Car test1 = new Car("pink",70,3);
 		Car test2 = new Car();
 		

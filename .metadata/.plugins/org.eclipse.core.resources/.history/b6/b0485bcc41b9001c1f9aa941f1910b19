@@ -16,13 +16,8 @@ class Car {
 	// 持失切2 
 	public Car() {
 		color = "default color";
-		speed = 10;
-		gear = 10;
-	}
-	
-	// this 持失切
-	public Car(String c) {
-		this(c,0,1);
+		speed = 0;
+		gear = 0;
 	}
 	
 	public String getColor() { return color; }

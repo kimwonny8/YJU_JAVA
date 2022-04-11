@@ -16,8 +16,8 @@ class Car {
 	// 持失切2 
 	public Car() {
 		color = "default color";
-		speed = 10;
-		gear = 10;
+		speed = 0;
+		gear = 0;
 	}
 	
 	// this 持失切
