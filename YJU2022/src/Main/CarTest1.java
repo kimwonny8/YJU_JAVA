@@ -43,7 +43,7 @@ class Car {
 	}
 }
 
-public class CarTest {
+public class CarTest1 {
 
 	public static void main(String[] args) {
 		// 생성자가 만들어지면 디폴트 생성자는 만들어지지 않기때문에 오류남
