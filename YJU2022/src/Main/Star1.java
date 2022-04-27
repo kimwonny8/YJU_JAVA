@@ -14,7 +14,7 @@ public class Star1 {
 			
 			for(int j=1; j<=2*h-1; j++) { // 가로길이
 				if(j>h-i && j<h+i) System.out.print("*"); //j>center-cnt && j<center+cnt
-				else System.out.print(".");
+				else System.out.print(" ");
 			} // end of for j
 			
 			System.out.println(); // 한 줄 찍고 줄바꿈
