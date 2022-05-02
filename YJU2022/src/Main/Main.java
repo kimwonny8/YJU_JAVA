@@ -3,11 +3,13 @@ package Main;
 public class Main {
 
 	public static void main(String[] args) {
-		int x=10, y=20, z=30;
-		System.out.println((x>0)||(y<0)&&(z<0));
-		System.out.println((x%2==0)&&(z%x==0));
-		System.out.println(!(x>y)&&!(y<z));
-		System.out.println((x>y)||(y<z));
+		 boolean b = false;
+		 float f = 0.14f;
+		 long i = 8000000000L;
+		 String c = "한국";
+		 long point = 0L;
+		 point += i;
+		 // 이하생략
 	}
 
 }
