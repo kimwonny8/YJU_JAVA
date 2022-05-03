@@ -5,31 +5,30 @@ import java.awt.*;
 
 public class BorderLayoutEx extends JFrame {
 	BorderLayoutEx(){
-		setTitle("BorderLayout ¿¹Á¦");
+		setTitle("BorderLayout ì˜ˆì œ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container cp = getContentPane();
 		
 		cp.setBackground(Color.RED);
-		BorderLayout bd = new BorderLayout(10,20); //¼öÆò°£°İ, ¼öÁ÷°£°İ
+		BorderLayout bd = new BorderLayout(10,20); //ìˆ˜í‰ê°„ê²©, ìˆ˜ì§ê°„ê²©
 		//BorderLayout bd = new BorderLayout();
 		cp.setLayout(bd);
 	
-		JButton jb1 = new JButton("Áß¾Ó");
-		JButton jb2 = new JButton("»ó");
+		JButton jb1 = new JButton("ì¤‘ì•™");
+		JButton jb2 = new JButton("ìƒ");
 		
 		cp.add(jb1, bd.CENTER);
 		cp.add(jb2, bd.NORTH);
-		cp.add(new JButton("ÇÏ"),bd.SOUTH); 	
-		cp.add(new JButton("ÁÂ"),bd.WEST);
-		cp.add(new JButton("¿ì"),bd.EAST);
+		cp.add(new JButton("í•˜"),bd.SOUTH); 	
+		cp.add(new JButton("ì¢Œ"),bd.WEST);
+		cp.add(new JButton("ìš°"),bd.EAST);
 		
-		//cp.add(new Label("ÄÄÆ÷³ÍÆ® ¼öÆò°£°İ : "+bd.getHgap()), bd.NORTH);
-		//cp.add(new Label("ÄÄÆ÷³ÍÆ® ¼öÁ÷°£°İ : "+bd.getVgap()), bd.SOUTH);
+		//cp.add(new Label("ì»´í¬ë„ŒíŠ¸ ìˆ˜í‰ê°„ê²© : "+bd.getHgap()), bd.NORTH);
+		//cp.add(new Label("ì»´í¬ë„ŒíŠ¸ ìˆ˜ì§ê°„ê²© : "+bd.getVgap()), bd.SOUTH);
 		
 		setSize(300,200);
 		setVisible(true);
 	}
-	
 	public static void main(String[] args) {
 		new BorderLayoutEx();
 	}
