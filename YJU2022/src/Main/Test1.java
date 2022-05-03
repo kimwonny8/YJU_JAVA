@@ -1,6 +1,6 @@
 package Main;
 
-class Car {
+class Car0 {
 	int speed;
 	int gear;
 	public String color;
@@ -13,7 +13,7 @@ class Car {
 	}
 }
 
-class SportsCar extends Car{
+class SportsCar extends Car0{
 	boolean turbo;
 	
 	public void setTurbo(boolean value) {
@@ -31,7 +31,10 @@ public class Test1{
 		c.speedUp(100);
 		c.speedDown(30);
 		c.setTurbo(true);
-		c.print();
+		//c.print();
+		
+		Car0 obj=new Car0();
+		System.out.println("obj is of type "+obj.getClass().getName());
 
 	}
 
