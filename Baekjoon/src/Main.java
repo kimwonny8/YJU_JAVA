@@ -1,30 +1,21 @@
-import java.util.Arrays;
 import java.util.Scanner;
- 
+
 public class Main {
-    
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        
-        int n=sc.nextInt();
-        int[] arr=new int[n];
-        for(int i=0; i<n; i++) arr[i]=sc.nextInt();
-        
-        int max=Integer.MAX_VALUE, start=0, end=n-1;
-        int ans1=-1, ans2=-1;
-        
-        Arrays.sort(arr);
-        
-        while(start<end) {
-        	int sum=arr[start]+arr[end];
-        	if(Math.abs(sum) < max) {
-        		max=Math.abs(sum);
-        		ans1=arr[start];
-        		ans2=arr[end];
-        	}
-        	if(sum>0) end--;
-        	else start++;
-        }
-        System.out.println(ans1+" "+ans2);
-    }
-}    
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in); 
+		StringBuilder sb = new StringBuilder();
+		
+		int n=sc.nextInt();
+		boolean []arr=new boolean[n+1];
+		// false ¸é ¼Ò¼ö
+		arr[0]=arr[1]=true;
+		int sum=0;
+		for(int i=2; i*i<=n; i++) {
+			for(int j=i*i; j<=n; j+=i) {
+				arr[j]=true;
+				sum+=j;
+			}
+		}
+		System.out.println(sum);
+	}
+}
