@@ -1,8 +1,10 @@
+package Silver;
+
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Comparator;
  
-public class Main {
+public class Q1931 {
  
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
