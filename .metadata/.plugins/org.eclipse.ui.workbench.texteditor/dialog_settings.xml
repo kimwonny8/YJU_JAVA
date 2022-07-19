@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="con"/>
+		<item key="selection" value="mid"/>
 		<list key="findhistory">
+			<item value="start"/>
+			<item value="middle"/>
+			<item value="third"/>
+			<item value="second"/>
+			<item value="first"/>
 			<item value="con"/>
 			<item value="l1"/>
 			<item value="b1"/>
@@ -15,13 +20,17 @@
 			<item value="background"/>
 		</list>
 		<list key="replacehistory">
+			<item value="mid"/>
+			<item value="end"/>
+			<item value="middle"/>
+			<item value="start"/>
 			<item value="label"/>
 			<item value="btn"/>
 			<item value="Background"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1255"/>
+		<item key="DIALOG_X_ORIGIN" value="606"/>
 		<item key="DIALOG_Y_ORIGIN" value="189"/>
 		<item key="DIALOG_WIDTH" value="362"/>
 		<item key="DIALOG_HEIGHT" value="490"/>
