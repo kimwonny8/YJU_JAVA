@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="mid"/>
+		<item key="selection" value="int"/>
 		<list key="findhistory">
+			<item value="char"/>
 			<item value="start"/>
 			<item value="middle"/>
 			<item value="third"/>
@@ -20,6 +21,7 @@
 			<item value="background"/>
 		</list>
 		<list key="replacehistory">
+			<item value="int"/>
 			<item value="mid"/>
 			<item value="end"/>
 			<item value="middle"/>
