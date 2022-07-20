@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="int"/>
+		<item key="selection" value="isDigit"/>
 		<list key="findhistory">
+			<item value="package Gold;"/>
+			<item value="isDigit"/>
+			<item value="Exp"/>
 			<item value="char"/>
 			<item value="start"/>
 			<item value="middle"/>
@@ -21,6 +24,7 @@
 			<item value="background"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Calculator"/>
 			<item value="int"/>
 			<item value="mid"/>
 			<item value="end"/>
