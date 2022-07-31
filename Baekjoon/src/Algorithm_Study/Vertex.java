@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm_Study;
 
 public class Vertex<E> {
     /*
