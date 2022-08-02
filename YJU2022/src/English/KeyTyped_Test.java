@@ -9,16 +9,16 @@ public class KeyTyped_Test extends JFrame {
 	JLabel la = new JLabel("getKeyChar()");
 	JLabel la2 = new JLabel("getKeyCode()");
 	
-	KeyTyped_Test(){
-		super("KeyTypedEvent´Â getKeyCode()¿¡ ¹İÀÀÇÏÁö ¾ÊÀ½");
+	KeyTyped_Test() {
+		super("KeyTypedEventëŠ” getKeyCode()ì— ë°˜ì‘í•˜ì§€ ì•ŠìŒ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(cp); 
 		cp.setLayout(null);
 		cp.addKeyListener(new KeyTypedEvent());
 		la.setBounds(50,10,300,100);
 		la2.setBounds(50,60,300,100);
-		la.setFont(new Font("±Ã¼­Ã¼",Font.BOLD,30));
-		la2.setFont(new Font("±Ã¼­Ã¼",Font.BOLD,30));
+		la.setFont(new Font("ê¶ì„œì²´",Font.BOLD,30));
+		la2.setFont(new Font("ê¶ì„œì²´",Font.BOLD,30));
 		cp.add(la);
 		cp.add(la2);
 		setSize(500,400);
@@ -29,9 +29,9 @@ public class KeyTyped_Test extends JFrame {
 		class KeyTypedEvent extends KeyAdapter {
 			public void KeyTyped(KeyEvent e) {
 				char KeyChar = e.getKeyChar();
-				la.setText("KeyChar°ª: "+KeyChar);
+				la.setText("KeyCharê°’: "+KeyChar);
 				int keyCode = e.getKeyCode();
-				la2.setText("keyCode°ª: "+keyCode);
+				la2.setText("keyCodeê°’: "+keyCode);
 				if(KeyChar == 'Q') System.exit(0);
 			}
 		}
