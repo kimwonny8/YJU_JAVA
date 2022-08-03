@@ -1,0 +1,28 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class LoginAfter {
+	// DB 관련
+	   public static Connection makeConnection() {
+	      String url = "jdbc:mariadb://localhost:3306/star_db";
+	      Connection con = null;
+	      
+	      try {
+	         Class.forName("org.mariadb.jdbc.Driver");
+	         con = DriverManager.getConnection(url, "root", "1234");
+	      } catch (ClassNotFoundException e) {
+	         System.err.println("드라이버를 찾을 수 없습니다");
+	      } catch (SQLException e) {
+	         System.err.println("연결에 실패했습니다");
+	      }
+	      return con;
+	   }
+	   Connection con = makeConnection();
+	   Statement stmt = con.createStatement();
+	   
+	   public LoginAfter() throws SQLException {
+		   
+	   }
+}
