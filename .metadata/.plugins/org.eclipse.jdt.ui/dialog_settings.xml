@@ -3,8 +3,8 @@
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="1"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-16"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="false"/>
-	<item key="org.eclipse.jdt.ui.last.selected.project.jre" value="jdk-16.0.1"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="D:\project\YJU_JAVA\YJU2022_SV\WebContenct\WEB-INF\lib"/>
+	<item key="org.eclipse.jdt.ui.last.selected.project.jre" value="jre"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="D:\Dev\jwbook\lib"/>
 	<item key="filters_last_used" value="filter_imports;"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
@@ -86,7 +86,7 @@
 		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item key="index" value="0"/>
+		<item key="index" value="3"/>
 	</section>
 	<section name="BreadcrumbItemDropDown">
 	</section>
